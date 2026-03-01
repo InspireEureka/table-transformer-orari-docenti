@@ -205,3 +205,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================================
+# Dati e modelli (troppo grandi per git — usare Git LFS o storage esterno)
+# ============================================================
+models/
+dataset/
+dataset_raw/
+checkpoints/
+
+# Checkpoint PyTorch
+*.pth
+*.pt
+*.ckpt
+
+# Output di debug e log
+debug_output/
+training_*.log
+metrics_*.json
+
+# Cache EasyOCR (~200MB di modelli linguistici)
+.EasyOCR/
+
+# Report di pre-annotazione
+pre_annotazione_report.json
+
+# Output valutazione
+eval_output/
+
+# VSCode (esplicito)
+.vscode/

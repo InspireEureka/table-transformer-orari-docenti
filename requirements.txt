@@ -1,0 +1,43 @@
+# ============================================================
+# requirements.txt - Dipendenze per fine-tuning TATR
+# ============================================================
+# Hardware target: NVIDIA RTX 3060 12GB VRAM, CUDA 11.8
+#
+# Installazione:
+#   pip install -r requirements.txt
+#
+# NOTA: torch, torchvision e torchaudio devono essere installati
+# con i wheel CUDA specifici. L'URL extra-index è obbligatorio.
+# ============================================================
+
+# --- PyTorch con supporto CUDA 11.8 (RTX 3060 Ampere) ---
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+torchaudio==2.1.2+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# --- HuggingFace: download e inferenza modelli pre-addestrati ---
+transformers==4.38.2
+huggingface_hub==0.21.4
+
+# --- Visione artificiale e manipolazione immagini ---
+Pillow==10.2.0
+opencv-python==4.9.0.80
+
+# --- OCR per estrazione testo da orari ---
+easyocr==1.7.1
+
+# --- Parsing e generazione XML Pascal VOC ---
+lxml==5.1.0
+
+# --- Visualizzazione risultati e metriche ---
+matplotlib==3.8.3
+numpy==1.26.4
+scipy==1.12.0
+
+# --- Valutazione mAP (metriche COCO) ---
+pycocotools==2.0.7
+
+# --- Utilità generali ---
+tqdm==4.66.2
+requests==2.31.0

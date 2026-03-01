@@ -1,0 +1,1 @@
+{\n  "batch_size": 6,\n  "epochs": 40,\n  "learning_rate": 5e-5,\n  "backbone": "resnet18"\n}
